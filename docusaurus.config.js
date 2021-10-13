@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: '',
   organizationName: 'madetech', // Usually your GitHub org/user name.
   projectName: 'ops-cookbook', // Usually your repo name.
 
