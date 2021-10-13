@@ -53,7 +53,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Introduction',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
