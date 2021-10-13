@@ -1,14 +1,12 @@
 # Infrastructure-as-code
 
-The terraform files within this directory represents the infrastructure-as-code for the Beacons Maintenance Page.
+The terraform files within this directory represents the infrastructure-as-code for a gov.uk style Maintenance Page.
 
 The basic premise is a static https enabled page served via CloudFront and S3 that can be swapped via the route53 alias functionality.
 
-You can build a maintenance page for any environment or URL although the default settings tie together the environment and the urls currently in use.
+You can build a maintenance page for any environment or URL.
 
-e.g the staging environment uses the url staging.406beacons.com.
-
-Note: the s3 bucket 'must' be named to match the hostname used to access the page e.g staging.406beacons.com
+Note: the s3 bucket 'must' be named to match the hostname used to access the page e.g staging.myservice.com
 
 ## Required Setup
 When starting from a blank slate (no previous AWS setup) the following is required .
@@ -26,4 +24,4 @@ The following example shows how to build and deploy a Maintenance Page for stagi
 - terraform init
 - terraform plan -var-file="staging.tfvars"
 - terraform apply -var-file="staging.tfvars"
-- aws s3 sync ./html/ s3://staging.406beacons.com --delete
+- aws s3 sync ./html/ s3://staging.myservice.com --delete
