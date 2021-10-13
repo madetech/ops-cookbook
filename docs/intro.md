@@ -17,3 +17,5 @@ Simple ops recipes, often in Terraform to drop into your project immediatly addi
  * ECS Alarms
  * Setup Cloudwatch notifications via SNS
  * Integrate notifications into Trello
+ * Service Health Checks
+ * Build a Dashboard
