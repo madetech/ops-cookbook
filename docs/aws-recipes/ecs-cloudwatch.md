@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+# ECS CloudWatch
+
 ## Set the variables
 
 The enable_alerts variable is used to turn on/off notifications per environment.
@@ -19,7 +21,7 @@ variable "api_service_minimum_task_count" {
 }
 ```
 
-# ECS CloudWatch
+## Alarms
 
 Each ECS service has an expected number of tasks running, often this is just a single task (e.g the web server). It's a useful way to check if the ECS service is healthy and alert on it.
 
