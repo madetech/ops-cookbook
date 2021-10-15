@@ -6,7 +6,7 @@ sidebar_position: 2
 
 A GitHub Actions deployable maintenace page with gov.uk branding and a configurable message.
 
-![Maintenace Page](screenshots/maintenance-page.png)
+![Maintenance Page](screenshots/maintenance-page.png)
 
 ## The Premise
 
