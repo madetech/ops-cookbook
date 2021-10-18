@@ -1,5 +1,5 @@
 resource "aws_cloudfront_distribution" "s3_distribution" {
-  tags = module.beacons_label.tags
+  tags = module.myservice_label.tags
   origin {
     domain_name = aws_s3_bucket.maintenance-page.bucket_regional_domain_name
     origin_id   = aws_s3_bucket.maintenance-page.bucket

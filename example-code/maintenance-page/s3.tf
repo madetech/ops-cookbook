@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "maintenance-page" {
   bucket = var.cloudfront_domain_name
-  tags   = module.beacons_label.tags
+  tags   = module.myservice_label.tags
   acl    = "public-read"
 
   website {

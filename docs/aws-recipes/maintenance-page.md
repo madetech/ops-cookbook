@@ -22,7 +22,11 @@ The Maintenance Page is enabled by updating the A record for the domain in Route
 
 You will need to manually create a certificate and reference the arn created from the terraform.
 
-## Managing the Terraform
+You can use AWS to [request a certificate](https://eu-west-2.console.aws.amazon.com/acm/home?region=eu-west-2#/privatewizard/) for your domain. e.g www.myservice.com. If your service is already running on AWS you might already have this available to use.
+
+Make a note of the ARN that is assigned to your certificate as you will need to add this to your Terraform [code](https://github.com/struds/ops-cookbook/blob/main/example-code/maintenance-page/cloudfront.tf) - of course you could extend the code to make it configurable or even use Terraform to provision a certificate.
+
+## Terraform
 
 [S3](https://github.com/struds/ops-cookbook/blob/main/example-code/maintenance-page/s3.tf)
 
