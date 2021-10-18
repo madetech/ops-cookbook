@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Tags
 
+Ensure every resource is tagged automtically per environment.
+
 [Terraform null label](https://github.com/cloudposse/terraform-null-label)
 
 ```

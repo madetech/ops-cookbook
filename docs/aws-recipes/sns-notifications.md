@@ -4,6 +4,8 @@ sidebar_position: 8
 
 # SNS Notifications
 
+Connect your CloudWatch Alarms to an SNS topic then add subscriptions to get notified.
+
 ## Setup a Simple Notification Service Topic
 
 ```

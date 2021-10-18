@@ -4,11 +4,22 @@ sidebar_position: 10
 
 # Health Checks
 
+A Route53 health check pings a url dozens of times from different locations around the world; this example shows how to setup a health check and attach a CloudWatch Alarm.
+
+:::info
+
+Health checks can only be provisioned in the us-east region. If you wish to connect the alarms to an SNS topic you will need to provision a us-east SNS topic specifically for these alarms.
+:::
+
 ## Set the variables
 
 The enable_alerts variable is used to turn on/off notifications per environment.
 
 ```
+variable "webapp_fqdn" {
+  type        = string
+  description = "The URL of the web app, used for health checks"
+}
 variable "enable_alerts" {
   type        = bool
   description = "When enabled CloudWatch alarm events are sent to the Alerts SNS Topic"
