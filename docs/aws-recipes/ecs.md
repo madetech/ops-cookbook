@@ -2,9 +2,54 @@
 sidebar_position: 4
 ---
 
-# ECS
+# ECS with Fargate
 
-## Set the variables
+Takes a Docker image (this will be your application) and deploys into a [Fargate managed ECS cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html).
+
+## Set the environment variables
+
+These can built in the terraform e.g:
+
+```
+{
+   name : "ALERT_EMAIL",
+   value : var.alert_email
+}
+```
+
+
+## Set the secrets
+
+In this example secrets are pulled out of the AWS Secrets Manager service - they can be set directly in that service or managed elsewhere and built into the Terraform.
+
+The Secrets Manager Service can also be described as Terraform e.g.
+
+```
+resource "aws_secretsmanager_secret" "db_password" {
+  name = "${terraform.workspace}_db_password"
+}
+
+resource "aws_secretsmanager_secret_version" "db_password" {
+  secret_id     = aws_secretsmanager_secret.db_password.id
+  secret_string = var.db_password
+}
+```
+
+:::caution
+
+If following the above example ensure you do not commit a secret value into source control via production.tfvars
+
+One solution is to manage secrets in GitHub Secrets and substitute them via a workflow action during deploy e.g:
+
+```
+    - name: Terraform Deploy
+        env:
+          TF_VAR_db_password: ${{ secrets.DB_PASSWORD }}
+        run: terraform apply -auto-approve -var-file=production.tfvars -var-file=production.images.tfvars
+```
+:::
+
+## Set the Terraform variables
 
 ```
 # See docs: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html
@@ -14,12 +59,12 @@ variable "ecs_fargate_version" {
 }
 variable "webapp_image" {
   type        = string
-  description = "Docker image to run in the ECS cluster for the Beacons Webapp"
+  description = "Docker image to run in the ECS cluster"
   default     = "myservice-webapp"
 }
 variable "webapp_image_tag" {
   type        = string
-  description = "Hash of the relevant commit to the mca-beacons-webapp repo"
+  description = "Name of the docker image to be deployed from the AWS ECR Repo"
 }
 variable "webapp_port" {
   type        = number
