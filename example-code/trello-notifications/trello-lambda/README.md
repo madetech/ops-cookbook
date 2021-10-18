@@ -53,8 +53,6 @@ You can now run Terraform from the console, as you are only deploying the lambda
   terraform apply -var-file=dev.tfvars  -target=aws_lambda_function.notify_trello_lambda
   terraform apply -var-file=dev.tfvars  -target=aws_sns_topic_subscription.sns_technical_alerts_lambda_subscription
   terraform apply -var-file=dev.tfvars  -target=aws_lambda_permission.with_sns_technical_alerts
-  terraform apply -var-file=dev.tfvars  -target=aws_sns_topic_subscription.sns_service_alerts_lambda_subscription
-  terraform apply -var-file=dev.tfvars  -target=aws_lambda_permission.with_sns_service_alerts
 ```
 
 ## Live Testing

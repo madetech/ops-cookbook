@@ -45,23 +45,8 @@ resource "aws_lambda_permission" "with_sns_technical_alerts" {
   source_arn    = aws_sns_topic.sns_technical_alerts.arn
 }
 
-resource "aws_lambda_permission" "with_sns_service_alerts" {
-  statement_id  = "AllowExecutionFromSNSServiceAlerts"
-  action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.notify_trello_lambda.arn
-  principal     = "sns.amazonaws.com"
-  source_arn    = aws_sns_topic.sns_service_alerts.arn
-}
-
 resource "aws_sns_topic_subscription" "sns_technical_alerts_lambda_subscription" {
   topic_arn = aws_sns_topic.sns_technical_alerts.arn
   protocol  = "lambda"
   endpoint  = aws_lambda_function.notify_trello_lambda.arn
-}
-
-resource "aws_sns_topic_subscription" "sns_service_alerts_lambda_subscription" {
-  topic_arn = aws_sns_topic.sns_service_alerts.arn
-  protocol  = "lambda"
-  endpoint  = aws_lambda_function.notify_trello_lambda.arn
-  provider  = aws.us-east
 }

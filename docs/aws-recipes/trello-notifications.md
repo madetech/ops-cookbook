@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Trello Notifications
 
-Integrate your SNS notifications into Trello via a Lambda function.
+Integrate your SNS notifications into Trello via a Node.js Lambda function.
 
 ![Trello Notification](screenshots/trello-notification.png)
 
@@ -76,4 +76,4 @@ I've included an [example](https://github.com/struds/ops-cookbook/blob/main/exam
 
 However to develop the Lambda function i've included a self contained project with using the Jest test framework which mocks out the trello API allowing local development without deployment.
 
-This [Node.js Lambda README](https://github.com/struds/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/README.md) below has instructions on how to build and run the Lambda locally but also how to integrate with Trello and deploy into AWS.
+This [README](https://github.com/struds/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/README.md) below has instructions on how to build and run the Lambda locally but also how to integrate with Trello and deploy into AWS.
