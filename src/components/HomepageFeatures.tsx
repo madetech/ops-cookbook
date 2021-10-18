@@ -16,29 +16,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Use only what you need',
-    image: '/img/undraw_docusaurus_mountain.svg',
+    title: 'Terraform',
+    image: '/img/terraform-logo.png',
     description: (
       <>
-        Take the recipes you need, igmnore the ones you don't.
+        Infrastructure as code
       </>
     ),
   },
   {
-    title: 'Save time',
-    image: '/img/undraw_docusaurus_tree.svg',
+    title: 'AWS',
+    image: '/img/aws.png',
     description: (
       <>
-        Don't re-invent the wheel.
+        Cloud services
       </>
     ),
   },
   {
-    title: 'Greater consistency',
-    image: '/img/undraw_docusaurus_react.svg',
+    title: 'Azure',
+    image: '/img/azure.png',
     description: (
       <>
-        A starting point to bring together learnings and best practise.
+        Cloud services
       </>
     ),
   },

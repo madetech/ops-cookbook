@@ -62,38 +62,10 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Made Tech Guides',
-            items: [
-              {
-                label: 'Made Tech GitHub',
-                href: 'https://github.com/madetech',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    footer: {
+     style: "dark",
+      links: [],
+      copyright: `Made Tech`,
       },
       prism: {
         theme: lightCodeTheme,
