@@ -1,0 +1,9 @@
+*node_modules/*
+*coverage/*
+
+.DS_Store
+.vscode
+.yarn
+yarn-error.log
+.docusaurus
+.cache-loader
