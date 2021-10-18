@@ -6,6 +6,41 @@ sidebar_position: 3
 
 ![AWS Network Diagram](screenshots/aws-networking.png)
 
+Using this template as a starting point you will create a single VPC and 3 subnets.
+
+The *Public subnet* is where the load balancers are attached and anything that requires direct access to the internet.
+
+The *App subnet* is where your applications can live but any internet access (in or out) is via a routing rule through the Public subnet.
+
+The *DB subnet* can talk to the App subnet by default but has no internet access in or out by default.
+
+*Availability zones* are configurable but typically 2 for production and 1 for other environments.
+
+The ALB forces HTTPS by redirecting HTTP traffic to HTTPS.
+
+:::caution
+
+HTTPS is terminated at the ALB so traffic over the private network is not encrypted by default.
+:::
+
+:::info EIP
+
+An EIP is always required for the NAT Gateway and is used as a static IP for outgoing traffic only.
+:::
+
+## Set the variables
+
+The az_count variable is used to configure number of availability zones the subnets are split over.
+
+```
+variable "az_count" {
+  type        = number
+  description = "Number of AZs to cover in a given region"
+  default     = 2
+}
+
+```
+
 ## VPC
 
 ```
