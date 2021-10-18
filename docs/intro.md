@@ -6,16 +6,22 @@ sidebar_position: 1
 
 Simple ops recipes, often in Terraform to drop into your project immediatly adding value.
 
+## Prerequisites
+
+ * AWS CLI
+ * Terraform
+ * NPM
+
 ## AWS Recipes
 
  * Build and Deploy a maintenance page
  * Basic Networking Setup
  * Build an RDS instance for dev, staging and production
- * Build an auto scaling ECS cluster
- * Terraform Tags made easy
+ * Build an ECS cluster with Fargate
+ * Terraform Tags
  * RDS Cloudwatch Alarms
- * ECS Alarms
+ * ECS Cloudwatch Alarms
  * Setup Cloudwatch notifications via SNS
- * Integrate notifications into Trello
+ * Integrate SNS notifications into Trello
  * Service Health Checks
  * Build a Dashboard
