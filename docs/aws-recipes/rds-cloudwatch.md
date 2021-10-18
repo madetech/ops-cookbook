@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # RDS CloudWatch
 
-[RDS Alarms](https://github.com/lorenzoaiello/terraform-aws-rds-alarms)
+The Terraform module [RDS Alarms](https://github.com/lorenzoaiello/terraform-aws-rds-alarms) provides a good set of basic alarms with sensible defaults.
 
 ## Set the variables
 
@@ -25,9 +25,13 @@ variable "low_disk_burst_balance_threshold" {
 
 ## Set the RDS Alarms
 
-Note that in this example we override the default for 'low disk burst balance', you can also override the other defaults set by the Terraform module but in practise I found only the burst balance needed tweaking as it was too noisy whenever it dipped below 100.
+:::info low disk burst balance
+in this example we override the default for 'low disk burst balance', you can also override the other defaults set by the Terraform module but in practise I found only the burst balance needed tweaking as it was too noisy whenever it dipped below 100.
+:::
 
-Note: The enable_alerts variable is used to link an action to something, in this case an SNS topic for technical alerts.
+:::info enable_alerts
+The enable_alerts variable is used to link an action to something, in this case an SNS topic for technical alerts.
+:::
 
 ```
 module "aws-rds-alarms" {
