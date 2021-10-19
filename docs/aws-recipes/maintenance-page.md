@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Maintenance Page
 
-A GitHub Actions/Terraform deployable maintenace page with gov.uk branding and a configurable message.
+A GitHub Actions/Terraform deployable maintenance page with gov.uk branding and a configurable message.
 
 ![Maintenance Page](screenshots/maintenance-page.png)
 

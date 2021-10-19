@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ops Cookbook',
   tagline: 'Recipes for teams delivering Government Cloud Services',
-  url: 'https://struds.github.io',
+  url: 'https://madetech.github.io',
   baseUrl: '/ops-cookbook/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'struds', // Usually your GitHub org/user name.
+  organizationName: 'madetech', // Usually your GitHub org/user name.
   projectName: 'ops-cookbook', // Usually your repo name.
   trailingSlash: false,
 
