@@ -9,7 +9,7 @@ const config = {
   title: 'Ops Cookbook',
   tagline: 'Recipes for teams delivering Government Cloud Services',
   url: 'https://struds.github.io',
-  baseUrl: '/ops-cookbook',
+  baseUrl: '/ops-cookbook/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
