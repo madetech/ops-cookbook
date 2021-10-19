@@ -17,7 +17,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Terraform',
-    image: '/img/terraform-logo.png',
+    image: 'img/terraform-logo.png',
     description: (
       <>
         Infrastructure as code
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AWS',
-    image: '/img/aws.png',
+    image: 'img/aws.png',
     description: (
       <>
         Cloud services
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Azure',
-    image: '/img/azure.png',
+    image: 'img/azure.png',
     description: (
       <>
         Cloud services
