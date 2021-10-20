@@ -6,18 +6,6 @@ sidebar_position: 4
 
 Takes a Docker image (this will be your application) and deploys into a [Fargate managed ECS cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html).
 
-## Set the environment variables
-
-These can built in the terraform e.g:
-
-```
-{
-   name : "ALERT_EMAIL",
-   value : var.alert_email
-}
-```
-
-
 ## Set the secrets
 
 In this example secrets are pulled out of the AWS Secrets Manager service - they can be set directly in that service or managed elsewhere and built into the Terraform.
@@ -92,6 +80,18 @@ variable "webapp_fargate_memory" {
 ```
 
 ## Set up ECS
+
+:::info Environment variables
+
+These can built in the terraform e.g:
+
+```
+{
+   name : "ALERT_EMAIL",
+   value : var.alert_email
+}
+```
+:::
 
 ```
 data "aws_ecr_repository" "webapp" {
@@ -173,7 +173,7 @@ resource "aws_ecs_service" "webapp" {
 }
 ```
 
-## Set the variables per environment
+## Set the Terraform variables per environment
 
 Typically these would be in production.tfvars.
 

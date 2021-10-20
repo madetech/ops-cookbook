@@ -25,7 +25,9 @@ variable "api_service_minimum_task_count" {
 
 Each ECS service has an expected number of tasks running, often this is just a single task (e.g the web server). It's a useful way to check if the ECS service is healthy and alert on it.
 
-Your Docker image should also have a health check and the service itself a Health Check endpoint which you can hook Route53 Health Checks into.
+:::info
+Your Docker image should also have a [health check](https://docs.docker.com/engine/reference/builder/#healthcheck) and the service itself a health check endpoint which you can hook [Route53 health checks](health-check) into.
+:::
 
 ```
 resource "aws_cloudwatch_metric_alarm" "ecs_webapp_task_count_too_low" {

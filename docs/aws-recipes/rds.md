@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # RDS
 
+Terraform to spin up RDS instances with backups, enhanced logging and other sensible settings on a per environment basis.
+
 ## Setup the variables
 
 Typically these would be in variables.tf.
