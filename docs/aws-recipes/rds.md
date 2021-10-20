@@ -29,7 +29,7 @@ variable "db_name" {
 variable "db_username" {
   type        = string
   description = "The username for the master database user"
-  default     = "beacons_service"
+  default     = "my_service"
   sensitive   = true
 }
 variable "db_password" {
