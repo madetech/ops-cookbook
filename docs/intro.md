@@ -14,14 +14,18 @@ Simple ops recipes, often in Terraform to drop into your project immediatly addi
 
 ## AWS Recipes
 
- * Build and deploy a gov.uk style maintenance page
- * Basic VPC, Subnet and routing setup
- * Build an RDS instance for different environments with sensible defaults (backups, logging etc)
- * Build an ECS cluster with Fargate
- * Easier Resource Tagging
- * Useful RDS Cloudwatch Alarms
- * Useful ECS Cloudwatch Alarms
- * CloudWatch email notifications delivered through SNS (Simple Notification Service)
- * Integrate SNS notifications into a Trello board
- * Service Health Checks and Alarms
- * Build a Dashboard
+ * [Build and deploy a gov.uk style maintenance page](/docs/aws-recipes/maintenance-page)
+ * [Basic VPC, Subnet and routing setup](/docs/aws-recipes/networking)
+ * [Build an RDS instance for different environments with sensible defaults (backups, logging etc)](/docs/aws-recipes/rds)
+ * [Build an ECS cluster with Fargate](/docs/aws-recipes/ecs)
+ * [Easier Resource Tagging](/docs/aws-recipes/tags)
+ * [Useful RDS Cloudwatch Alarms](/docs/aws-recipes/rds-cloudwatch)
+ * [Useful ECS Cloudwatch Alarms](/docs/aws-recipes/ecs-cloudwatch)
+ * [CloudWatch email notifications delivered through SNS (Simple Notification Service)](/docs/aws-recipes/sns-notifications)
+ * [Integrate SNS notifications into a Trello board](/docs/aws-recipes/trello-notifications)
+ * [Service Health Checks and Alarms](/docs/aws-recipes/health-check)
+ * [Build a Dashboard](/docs/aws-recipes/dashboard)
+
+## Adding Recipes
+
+Submit a Pull Request to the source repo [here](https://github.com/madetech/ops-cookbook/tree/main)
