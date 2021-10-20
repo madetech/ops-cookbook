@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/madetech/ops-cookbook/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +57,7 @@ const config = {
             label: 'Introduction',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/madetech/ops-cookbook',
             label: 'GitHub',
             position: 'right',
           },
