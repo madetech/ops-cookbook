@@ -8,8 +8,8 @@
         "Type": "Notification",
         "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
         "TopicArn": "arn:aws:sns:us-east-1:123456789012:ExampleTopic",
-        "Subject": "ALARM: rds-production-beacons-database-lowFreeStorageSpace in EU (London)",
-        "Message": "{\"AlarmName\":\"rds-production-beacons-database-lowFreeStorageSpace\",\"AlarmDescription\":\"Average database free storage space is too low and may fill up soon..\",\"AWSAccountId\":\"000000000000\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint (10.0) was greater than or equal to the threshold (1.0).\",\"StateChangeTime\":\"2017-01-12T16:30:42.236+0000\",\"Region\":\"EU - Ireland\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"DeliveryErrors\",\"Namespace\":\"ExampleNamespace\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1}}",
+        "Subject": "ALARM: rds-production-database-lowFreeStorageSpace in EU (London)",
+        "Message": "{\"AlarmName\":\"rds-production-database-lowFreeStorageSpace\",\"AlarmDescription\":\"Average database free storage space is too low and may fill up soon..\",\"AWSAccountId\":\"000000000000\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint (10.0) was greater than or equal to the threshold (1.0).\",\"StateChangeTime\":\"2017-01-12T16:30:42.236+0000\",\"Region\":\"EU - Ireland\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"DeliveryErrors\",\"Namespace\":\"ExampleNamespace\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1}}",
         "MessageAttributes": {
           "Test": {
             "Type": "String",

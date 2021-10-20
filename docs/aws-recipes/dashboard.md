@@ -30,7 +30,7 @@ resource "aws_cloudwatch_dashboard" "service_health" {
             "x": 0,
             "type": "text",
             "properties": {
-                "markdown": "# Beacons Health - ${terraform.workspace}\n## Health Check Alarms"
+                "markdown": "# Service Health - ${terraform.workspace}\n## Health Check Alarms"
             }
         },
         {
