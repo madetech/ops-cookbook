@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Ops Cookbook Intro
 
-Simple ops recipes, often in Terraform to drop into your project immediatly adding value.
+Simple ops recipes, often in Terraform to drop into your project immediately adding value.
 
 ## Prerequisites
 
