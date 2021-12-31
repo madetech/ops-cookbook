@@ -71,9 +71,9 @@ resource "aws_sns_topic_subscription" "sns_technical_alerts_lambda_subscription"
 
 The Lambda is delivered to AWS within a zip and can be edited, built and tested from the AWS console.
 
-I've included an [example](https://github.com/struds/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/trello-test-data.json) of a JSON CloudWatch Alert delivered via SNS which can be used as a test data within the AWS console.
+I've included an [example](https://github.com/madetech/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/trello-test-data.json) of a JSON CloudWatch Alert delivered via SNS which can be used as a test data within the AWS console.
 
 
 However to develop the Lambda function i've included a self contained project with using the Jest test framework which mocks out the trello API allowing local development without deployment.
 
-This [README](https://github.com/struds/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/README.md) below has instructions on how to build and run the Lambda locally but also how to integrate with Trello and deploy into AWS.
+This [README](https://github.com/madetech/ops-cookbook/blob/main/example-code/trello-notifications/trello-lambda/README.md) below has instructions on how to build and run the Lambda locally but also how to integrate with Trello and deploy into AWS.
